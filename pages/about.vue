@@ -9,7 +9,7 @@
             </div>
 
             <div class="flex items-center mt-8">
-                <h1 class="text-white text-4xl">About Shadow Anime</h1>
+                <h1 class="text-white text-4xl">About Ruchikar</h1>
                 <img src="https://static.wikia.nocookie.net/to-be-a-power-in-the-shadows/images/8/84/Delta_Game.png" alt=""
                     class="w-1/6 md:hidden">
             </div>
@@ -88,11 +88,11 @@
 export default {
     mounted() {
         useHead({
-            title: 'About Shadow Anime',
+            title: 'About Ruchikar',
             meta: [
                 {
                     name: 'description',
-                    content: 'About Shadow Anime',
+                    content: 'About Ruchikar',
                 },
             ],
         })

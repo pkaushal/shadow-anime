@@ -4,8 +4,8 @@ export default defineNuxtConfig({
     modules: ['@nuxt/ui', '@vite-pwa/nuxt'],
     app: {
         head: {
-            title: "Shadow Anime",
-            titleTemplate: "%s - Shadow Anime",
+            title: "Ruchikar",
+            titleTemplate: "%s - Ruchikar",
             link: [
                 {rel: "icon", type: "image/x-icon", href: "/delta_icon.png"},
                 {rel: "manifest", href: "/manifest.json"},
@@ -18,24 +18,24 @@ export default defineNuxtConfig({
                     hid: "description",
                     name: "description",
                     content:
-                        "Full list of the Most Popular and Must Watch Anime Online Free, with SUBBED and DUBBED. WATCH NOW!",
+                        "Articles for the Deities and your loved ones..",
                 },
                 {
                     hid: "og:title",
                     property: "og:title",
-                    content: "Shadow Anime - Shadow Anime",
+                    content: "Ruchikar Stores",
                 },
                 {
                     hid: "og:description",
                     property: "og:description",
                     content:
-                        "Full list of the Most Popular and Must Watch Anime Online Free, with SUBBED and DUBBED. WATCH NOW!",
+                        "Articles for the Deities and your loved ones..",
                 },
                 {
                     hid: "og:image",
                     property: "og:image",
                     content:
-                        "https://static.wikia.nocookie.net/to-be-a-power-in-the-shadows/images/f/f7/Shadow-Garden-Anime.jpg/revision/latest?cb=20221031135138",
+                        "https://freesvg.org/img/secretlondon_red_present.png",
                 },
                 {
                     hid: "robots",
@@ -95,9 +95,9 @@ export default defineNuxtConfig({
     pwa: {
         manifest: {
             display: "standalone",
-            name: "Shadow Anime",
-            short_name: "Shadow Anime",
-            description: "Shadow Anime - Home of Anime",
+            name: "Ruchikar",
+            short_name: "Ruchikar",
+            description: "Ruchikar - Store of Wonderful Articles",
             lang: "en",
             theme_color: "#0d0d12",
             background_color: "#0d0d12",

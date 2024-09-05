@@ -1,13 +1,13 @@
 <template>
     <div class="min-h-screen">
         <h1 class="text-center mt-3 text-white text-4xl">
-            <button @click="switchToggle()" :class="{ 'text-red-400': selected }">Waifu</button>
+            <button @click="switchToggle()" :class="{ 'text-red-400': selected }">Gallery</button>
         </h1>
-        <div v-if="waifu">
+        <div v-if="gallery">
             <UContainer>
                 <div class="flex flex-col items-center">
                     <div class="mt-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-                        <UButton v-for="(w, i) in waifu" :key="i" class="relative" @click="openModal(w.url)"
+                        <UButton v-for="(w, i) in gallery" :key="i" class="relative" @click="openModal(w.url)"
                             color="purple" variant="ghost">
                             <img :src="w.url" loading="lazy" alt="" class="rounded-lg object-cover w-56 h-64">
                         </UButton>
@@ -30,7 +30,7 @@
 export default {
     data() {
         return {
-            waifu: null as any,
+            gallery: null as any,
             loading: false,
             isOpen: false,
             showImg: null as any,
@@ -38,7 +38,7 @@ export default {
         }
     },
     async mounted() {
-        await this.fetchWaifu()
+        await this.fetchDeity()
     },
     methods: {
         openModal(url: string) {
@@ -48,13 +48,13 @@ export default {
         },
         switchToggle() {
             this.selected = !this.selected
-            this.fetchWaifu()
+            this.fetchDeity()
         },
-        async fetchWaifu() {
+        async fetchDeity() {
 
             let setItem = localStorage.getItem('age')
 
-            this.waifu = []
+            this.gallery = []
             const apiUrl = 'https://api.waifu.im/search';
 
             let params = {
@@ -109,7 +109,7 @@ export default {
                 .then(response => response.json())
                 .then(data => {
                     // console.log('data', data)
-                    this.waifu = data.images
+                    this.gallery = data.images
                 })
                 .catch(err => {
                     console.log(err)

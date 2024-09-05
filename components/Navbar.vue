@@ -146,9 +146,9 @@ export default {
         icon: 'i-heroicons-command-line',
         to: '/news'
       }, {
-        label: 'Waifu',
+        label: 'Gallery',
         icon: 'i-heroicons-command-line',
-        to: '/waifu'
+        to: '/gallery'
       }]],
       mobileLinks: [[{
         label: 'Home',
@@ -167,9 +167,9 @@ export default {
         icon: 'i-heroicons-command-line',
         to: '/news'
       }, {
-        label: 'Waifu',
+        label: 'Gallery',
         icon: 'i-heroicons-command-line',
-        to: '/waifu'
+        to: '/gallery'
       }], [
         {
           label: 'Login',
